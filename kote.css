@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #AED6F1;
+    margin: 0 auto; 
+    font-family: Arial, sylfaen;
+    height: 100vh;
+    width: 1000px;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+    justify-content: center;
+align-items: center;
+background-image: url(https://picsum.photos/id/1060/1000/300);
+background-size: cover;
+   background-position: center;
+   height: 300px;
+   animation: header-animation 5s ease-in-out infinite;
+
+}
+@keyframes header-animation{
+    0% {
+      background-position: left center;
+    }
+    50%{
+      background-position: right center;
+    }
+  100% {
+    background-position: left center;
+  }
+}
+.main-header > h1{
+    color: #3498DB;
+    text-align: end;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #AEB6BF;
+}
+.bar > li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+a,
+a:link,
+a:active,
+a:hover,
+a:visited {
+text-decoration: none;
+}
+.nav-item {
+    display: inline-block;
+    padding: 16px;
+    transition: transform 250ms ease-in;
+  }
+  
+  .nav-item .nav-item-disabled > a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: left 16px;
+    background-color:#A9DFBF;
+    color: azure;
+    border-radius: 5px;
+  }
+
+  .nav-item:hover{
+    transform: scale(1.1, 1.1);
+    transform: translatey(-8pz);
+  }
+  
+  .nav-item:active{
+    outline: 1px;
+    transform: scale(1.25, 1.25);
+  }
+  .nav-item-disabled{
+    display: inline-block;
+    padding: 4px 6px;
+    margin: left 16px;
+    background-color:#EAECEE;
+    color: azure;
+    border-radius: 5px;
+  }
+  .nav-item-disabled{
+      margin: 15px;
+   
+  }
+  .footer{
+    position:relative;
+    margin: 0rem;
+}
+
+.footer-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 0rem;
+}
+.footer-map{
+    width:100%;
+    height: 100%;
+}
+.footer > h3{
+    opacity: 0.8;
+}
